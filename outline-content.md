@@ -6,25 +6,27 @@ Unser Chor ist ein kleines, feines Ensemble aus 8 Sängerinnen und Sängern mit 
 
 # Chorleitung & Kontakt
 
-Die Chorleitung hat [Franziska Bopp](www.franziskabopp.de), 0152 54218951.
+Die Chorleitung hat [Franziska Bopp](http://www.franziskabopp.de), 0152 54218951.
+
 
 
 # Auftritte & Konzerte
 
-Unser nächster Auftritt ist am Samstag, 17. Dezember 2016.
+Unser nächster Auftritt ist am Samstag, 17. Dezember 2016
+Weihnachtskonzert, Sophie-Charlotte-Saal, Berliner Dom
 
 
 
 # Mitmachen
 
-Wir streben eine dreifache Besetzung jeder Stimme an (Sopran, Alt, Tenor und Bass). 
+Wir streben eine dreifache Besetzung jeder Stimme an (Sopran, Alt, Tenor und Bass).
 
 Aufgrund von „Personalschwankungen“ immer an Interessenten interessiert – insbesondere männliche Stimmen.
 
 Einfach trauen und Franziska Bopp anrufen unter 0152 54218951
 Bei uns ist kein Vorsingen erforderlich.
 
-Wir proben jeden zweiten Dienstag, von 20:30 bis 22:00 in Berlin-Kreuzberg.
+Wir proben jeden zweiten Dienstag, von 20:30 bis 22:00, Friedrichstraße 1 am Mehringplatz, 10969 Berlin.
 
 Zwei bis drei Mal im Jahr treten wir auf.
 
