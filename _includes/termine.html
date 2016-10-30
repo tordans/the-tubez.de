@@ -15,52 +15,30 @@
     <div class="row">
       <div class="col-lg-12">
         <ul class="timeline">
-          <!-- TODO-TJO: Diesen Teil hier in die _config verlagern oder eine data.yml und automatisch generieren -->
-          <!-- http://staticmapmaker.com/google/ -->
 
-          <li>
+          {% for termin in site.data.termine %}
+          <li class="{% cycle '', 'timeline-inverted' %}">
             <div class="timeline-image">
-              <a href="https://www.google.com/maps/place/Berliner+Dom,+Am+Lustgarten,+10178+Berlin/">
+              <a href="https://www.google.com/maps/place/{{ termin.location | replace: ' ', '+' | strip_newlines | escape }}/">
                 <img class="img-circle img-responsive"
-                  src="http://maps.googleapis.com/maps/api/staticmap?center=Berliner+Dom,+Am+Lustgarten,+10178+Berlin&zoom=13&scale=2&size=156x156&maptype=roadmap&key={{ site.google_static_map_key }}&format=jpg&visual_refresh=true&markers=size:mid%7Ccolor:0x{{ site.data.template.color.primary }}%7Clabel:%7CBerliner+Dom,+Am+Lustgarten,+10178+Berlin"
+                  src="http://maps.googleapis.com/maps/api/staticmap?center={{ termin.location | replace: ' ', '+' | strip_newlines | escape }}&zoom=13&scale=2&size=156x156&maptype=roadmap&key={{ site.google_static_map_key }}&format=jpg&visual_refresh=true&markers=size:mid%7Ccolor:0x{{ site.data.template.color.primary }}%7Clabel:%7C{{ termin.location | replace: ' ', '+' | strip_newlines | escape }}"
                   alt="Karte">
               </a>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <h4>Weihnachtskonzert 2016</h4>
+                <h4>{{ termin.heading }}</h4>
                 <!--<h4 class="subheading"></h4>-->
               </div>
               <div class="timeline-body">
                 <p class="text-muted">
-                  Samstag, 17. Dezember<br>
-                  Sophie-Charlotte-Saal, Berliner Dom
+                  {{ termin.body }}<br>
+                  <a href="https://www.google.com/maps/dir//{{ termin.location | replace: ' ', '+' | strip_newlines | escape }}/">Anfahrt</a>
                 </p>
               </div>
             </div>
           </li>
-
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <a href="https://www.google.com/maps/place/Hofkirche Köpenick, Bahnhofstraße 9, 12555 Berlin, Deutschland/">
-                <img class="img-circle img-responsive"
-                  src="http://maps.googleapis.com/maps/api/staticmap?center=Hofkirche+Köpenick,+Bahnhofstraße+9,+12555+Berlin, Deutschland&zoom=13&scale=2&size=156x156&maptype=roadmap&key={{ site.google_static_map_key }}&format=jpg&visual_refresh=true&markers=size:mid%7Ccolor:0x{{ site.data.template.color.primary }}%7Clabel:%7CHofkirche+Köpenick,+Bahnhofstraße+9,+12555+Berlin, Deutschland"
-                  alt="Karte">
-              </a>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>März 2016</h4>
-                <!--<h4 class="subheading"></h4>-->
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Samstag, 12. März 2016<br>
-                  Benefizkonzert mit dem Hofküchenchor
-                </p>
-              </div>
-            </div>
-          </li>
+          {% endfor %}
 
           <li class="timeline-inverted">
             <div class="timeline-image">
