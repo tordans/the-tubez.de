@@ -127,7 +127,7 @@ fieldset[disabled] .btn-primary.active {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
-  background-color: #{{ site.data.template.color.primary }};
+  background-color: #{{ site.data.template.color.secondary }};
 }
 
 .btn-xl:hover,
@@ -137,7 +137,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-xl {
   border-color: #{{ site.data.template.color.primary }};
   color: #fff;
-  background-color: #{{ site.data.template.color.secondary }};
+  background-color: #{{ site.data.template.color.primary }};
 }
 
 .btn-xl:active,
@@ -172,12 +172,12 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
   border-color: transparent;
-  background-color: #222;
+  background-color: #{{ site.data.template.color.navbar_black }};
 }
 
 .navbar-default .navbar-brand {
   font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-  color: #{{ site.data.template.color.primary }};
+  color: white;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -221,14 +221,14 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a {
   border-radius: 0;
-  color: #fff;
-  background-color: #{{ site.data.template.color.primary }};
+  color: #{{ site.data.template.color.navbar_black }};
+  background-color: white;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-  color: #fff;
-  background-color: #{{ site.data.template.color.secondary }};
+  color: #{{ site.data.template.color.navbar_black }};
+  background-color: white;
 }
 
 @media(min-width:768px) {
@@ -254,7 +254,7 @@ fieldset[disabled] .btn-xl.active {
 
   .navbar-default.navbar-shrink {
     padding: 10px 0;
-    background-color: #222;
+    background-color: #{{ site.data.template.color.navbar_black }};
   }
 
   .navbar-default.navbar-shrink .navbar-brand {
@@ -266,7 +266,7 @@ header {
   text-align: center;
   color: #fff;
   background-attachment: scroll;
-  background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+  background-image: url('{{ site.baseurl }}/img/hero-background.jpg');
   background-position: center center;
   background-repeat: none;
   -webkit-background-size: cover;
