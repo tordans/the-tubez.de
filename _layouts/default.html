@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -28,15 +28,7 @@
   </head>
   <body id="page-top" class="index">
 
-    {% include header.html %}
-    {% include ensemble.html %}
-    {% include team.html %}
-    {% include termine.html %}
-    {% include mitmachen.html %}
-
-    {% include footer.html %}
-    {% include impressum.html %}
-    {% include js.html %}
+    {{ content }}
 
   </body>
 </html>
